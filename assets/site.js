@@ -45,10 +45,6 @@
   var theme = "light";
   var langGroup = document.querySelector(".seg");
   var themeButton = document.getElementById("theme");
-  var heading = document.querySelector("h1");
-  var nameZh = heading.querySelector(".name-zh");
-  var nameEn = heading.querySelector(".name-en");
-
   function readStorage(key) {
     try {
       return localStorage.getItem(key);
@@ -109,8 +105,6 @@
       button.setAttribute("aria-checked", selected ? "true" : "false");
       button.tabIndex = selected ? 0 : -1;
     });
-
-    heading.insertBefore(nameZh, nameEn);
 
     themeButton.setAttribute("aria-label", themeLabel());
   }
