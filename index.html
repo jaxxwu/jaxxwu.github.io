@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light" data-lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>赛博吴同学 · Jaxx Wu</title>
+  <meta name="description" content="赛博吴同学（Jaxx Wu）是自媒体创作者，微信视频号「赛博吴同学」的主理人，专注分享人工智能知识。">
+  <meta name="author" content="Jaxx Wu">
+  <meta name="theme-color" content="#f3efe6">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://jaxxwu.github.io/">
+  <meta property="og:title" content="赛博吴同学">
+  <meta property="og:description" content="赛博吴同学（Jaxx Wu）是自媒体创作者，微信视频号「赛博吴同学」的主理人，专注分享人工智能知识。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaxxwu.github.io/">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:locale:alternate" content="en_US">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/noto-serif-sc-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/noto-sans-sc-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script>
+    (function () {
+      var theme = "light";
+      var lang = "zh";
+      try {
+        var savedTheme = localStorage.getItem("jaxx-theme");
+        var savedLang = localStorage.getItem("jaxx-lang");
+        if (savedTheme === "dark" || savedTheme === "light") theme = savedTheme;
+        else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
+        if (savedLang === "en" || savedLang === "zh") lang = savedLang;
+      } catch (error) {}
+      var root = document.documentElement;
+      root.setAttribute("data-theme", theme);
+      root.setAttribute("data-lang", lang);
+      root.lang = lang === "en" ? "en" : "zh-CN";
+      var meta = document.querySelector('meta[name="theme-color"]');
+      if (meta) meta.setAttribute("content", theme === "dark" ? "#0b0d12" : "#f3efe6");
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content" data-i18n="skip">跳到主要内容</a>
+  <canvas id="scene" aria-hidden="true"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="site" id="top">
+    <header class="header">
+      <a class="brand" href="#top" data-i18n="brand">赛博吴同学</a>
+      <div class="controls">
+        <div class="seg" role="radiogroup" aria-label="语言" data-i18n-aria="langGroup">
+          <button type="button" role="radio" data-lang-set="zh" aria-checked="true">中文</button>
+          <button type="button" role="radio" data-lang-set="en" aria-checked="false" tabindex="-1">EN</button>
+        </div>
+        <button type="button" class="icon-btn" id="theme" aria-label="切换到深色">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <path d="M12 2.1v2.2M12 19.7V21.9M2.1 12h2.2M19.7 12h2.2M4.8 4.8l1.5 1.5M17.7 17.7l1.5 1.5M19.2 4.8l-1.5 1.5M6.3 17.7l-1.5 1.5"></path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M15.2 3.6a7.6 7.6 0 1 0 5.4 12.5A8.4 8.4 0 0 1 15.2 3.6z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="content" tabindex="-1">
+      <div class="hero">
+        <p class="eyebrow" data-i18n="eyebrow">自媒体创作者</p>
+        <h1>
+          <span class="name-zh">赛博吴同学</span>
+          <span class="name-en">Jaxx Wu</span>
+        </h1>
+        <p class="lede" data-i18n="lede">微信视频号「赛博吴同学」的主理人，专注分享人工智能知识。</p>
+        <dl class="facts">
+          <div>
+            <dt data-i18n="factIdentityLabel">身份</dt>
+            <dd data-i18n="factIdentity">自媒体创作者</dd>
+          </div>
+          <div>
+            <dt data-i18n="factChannelLabel">频道</dt>
+            <dd data-i18n="factChannel">微信视频号「赛博吴同学」</dd>
+          </div>
+          <div>
+            <dt data-i18n="factFocusLabel">方向</dt>
+            <dd data-i18n="factFocus">人工智能知识</dd>
+          </div>
+        </dl>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>© 2026 Jaxx Wu · 赛博吴同学</p>
+    </footer>
+  </div>
+  <script src="assets/site.js"></script>
+</body>
+</html>
