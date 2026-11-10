@@ -273,8 +273,6 @@ button, a { touch-action: manipulation; }
   background: #fff;
 }
 
-[data-lang="en"] .avatar { display: none; }
-
 [data-lang="en"] .brand {
   font-family: var(--sans);
   font-weight: 500;
