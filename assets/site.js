@@ -19,8 +19,7 @@
       factIdentity: "自媒体创作者",
       factChannelLabel: "频道",
       factChannel: "微信视频号「赛博吴同学」",
-      factFocusLabel: "方向",
-      factFocus: "人工智能知识",
+      factEmailLabel: "邮箱",
       skip: "跳到主要内容",
       themeToDark: "切换到深色",
       themeToLight: "切换到浅色"
@@ -39,8 +38,7 @@
       factIdentity: "Self-media creator",
       factChannelLabel: "Channel",
       factChannel: "WeChat Channels · 赛博吴同学",
-      factFocusLabel: "Focus",
-      factFocus: "AI knowledge",
+      factEmailLabel: "Email",
       skip: "Skip to content",
       themeToDark: "Switch to dark theme",
       themeToLight: "Switch to light theme"

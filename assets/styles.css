@@ -392,8 +392,7 @@ h1 {
   font-family: var(--sans);
   font-size: 0.95rem;
   font-weight: 500;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--muted);
 }
 
@@ -463,6 +462,14 @@ dd { line-height: 1.6; }
 dd { text-wrap: pretty; }
 
 .keep { white-space: nowrap; }
+
+.facts a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.facts a:hover { color: var(--accent); }
 
 .footer {
   padding-bottom: max(22px, env(safe-area-inset-bottom));
