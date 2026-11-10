@@ -9,16 +9,15 @@
       htmlLang: "zh-CN",
       title: "赛博吴同学 · Jaxx Wu",
       ogTitle: "赛博吴同学",
-      description: "赛博吴同学（Jaxx Wu）是自媒体创作者，微信视频号「赛博吴同学」的主理人，专注分享人工智能知识。",
+      description: "探索极限之外",
       ogLocale: "zh_CN",
       langGroup: "语言",
       brand: "赛博吴同学",
       eyebrow: "自媒体创作者",
-      lede: "微信视频号「赛博吴同学」的主理人，专注分享人工智能知识。",
+      lede: "探索极限之外",
       factIdentityLabel: "身份",
-      factIdentity: "自媒体创作者",
-      factChannelLabel: "频道",
-      factChannel: "微信视频号「赛博吴同学」",
+      factIdentity: "视频号 赛博吴同学",
+      factXLabel: "X",
       factEmailLabel: "邮箱",
       skip: "跳到主要内容",
       themeToDark: "切换到深色",
@@ -28,16 +27,15 @@
       htmlLang: "en",
       title: "Jaxx Wu · 赛博吴同学",
       ogTitle: "Jaxx Wu",
-      description: "Jaxx Wu (赛博吴同学) is a self-media creator and the owner of the WeChat Channels account “赛博吴同学”, focused on sharing AI knowledge.",
+      description: "Exploring beyond the limits",
       ogLocale: "en_US",
       langGroup: "Language",
       brand: "Jaxx Wu",
       eyebrow: "Self-media creator",
-      lede: "Owner of the WeChat Channels account “赛博吴同学”, focused on sharing AI knowledge.",
+      lede: "Exploring beyond the limits",
       factIdentityLabel: "Identity",
-      factIdentity: "Self-media creator",
-      factChannelLabel: "Channel",
-      factChannel: "WeChat Channels · 赛博吴同学",
+      factIdentity: "WeChat Channels · 赛博吴同学",
+      factXLabel: "X",
       factEmailLabel: "Email",
       skip: "Skip to content",
       themeToDark: "Switch to dark theme",
@@ -114,8 +112,7 @@
       button.tabIndex = selected ? 0 : -1;
     });
 
-    if (lang === "en") heading.insertBefore(nameEn, nameZh);
-    else heading.insertBefore(nameZh, nameEn);
+    heading.insertBefore(nameZh, nameEn);
 
     themeButton.setAttribute("aria-label", themeLabel());
   }
