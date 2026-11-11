@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="light" data-lang="zh">
+<html lang="en" data-theme="dark" data-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>赛博吴同学 · Jaxx Wu</title>
-  <meta name="description" content="探索极限之外">
+  <title>Jaxx Wu · 赛博吴同学</title>
+  <meta name="description" content="Exploring beyond the limits">
   <meta name="author" content="Jaxx Wu">
-  <meta name="theme-color" content="#f3efe6">
+  <meta name="theme-color" content="#0b0d12">
   <meta name="color-scheme" content="light dark">
   <link rel="canonical" href="https://jaxxwu.github.io/">
-  <meta property="og:title" content="赛博吴同学">
-  <meta property="og:description" content="探索极限之外">
+  <meta property="og:title" content="Jaxx Wu">
+  <meta property="og:description" content="Exploring beyond the limits">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jaxxwu.github.io/">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="zh_CN">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/noto-serif-sc-500.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/noto-sans-sc-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
   <script>
     (function () {
-      var theme = "light";
-      var lang = "zh";
+      var theme = "dark";
+      var lang = "en";
       try {
         var savedTheme = localStorage.getItem("jaxx-theme");
         var savedLang = localStorage.getItem("jaxx-lang");
         if (savedTheme === "dark" || savedTheme === "light") theme = savedTheme;
-        else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
         if (savedLang === "en" || savedLang === "zh") lang = savedLang;
       } catch (error) {}
       var root = document.documentElement;
@@ -47,14 +46,14 @@
     <header class="header">
       <a class="brand" href="#top">
         <img class="avatar" src="assets/avatar.png" alt="" width="44" height="44">
-        <span class="brand-text" data-i18n="brand">赛博吴同学</span>
+        <span class="brand-text" data-i18n="brand">Jaxx Wu</span>
       </a>
       <div class="controls">
         <div class="seg" role="radiogroup" aria-label="语言" data-i18n-aria="langGroup">
-          <button type="button" role="radio" data-lang-set="zh" aria-checked="true">中文</button>
-          <button type="button" role="radio" data-lang-set="en" aria-checked="false" tabindex="-1">EN</button>
+          <button type="button" role="radio" data-lang-set="zh" aria-checked="false" tabindex="-1">中文</button>
+          <button type="button" role="radio" data-lang-set="en" aria-checked="true">EN</button>
         </div>
-        <button type="button" class="icon-btn" id="theme" aria-label="切换到深色">
+        <button type="button" class="icon-btn" id="theme" aria-label="Switch to light theme">
           <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
             <circle cx="12" cy="12" r="4.2"></circle>
             <path d="M12 2.1v2.2M12 19.7V21.9M2.1 12h2.2M19.7 12h2.2M4.8 4.8l1.5 1.5M17.7 17.7l1.5 1.5M19.2 4.8l-1.5 1.5M6.3 17.7l-1.5 1.5"></path>
@@ -68,19 +67,39 @@
     <div class="site">
     <main id="content" tabindex="-1">
       <div class="hero">
-        <h1 data-i18n="headline">无限可能</h1>
-        <p class="lede" data-i18n="lede">探索极限之外</p>
+        <h1 data-i18n="headline">Infinite Possibilities</h1>
+        <p class="lede" data-i18n="lede">Exploring beyond the limits</p>
         <dl class="facts">
           <div>
-            <dt data-i18n="factIdentityLabel">视频号</dt>
+            <dt data-i18n="factHomeCnLabel">Homepage (China)</dt>
+            <dd><a href="https://wutongxue.com">wutongxue.com</a></dd>
+          </div>
+          <div>
+            <dt data-i18n="factHomeIntlLabel">Homepage (International)</dt>
+            <dd><a href="https://jaxxwu.github.io">jaxxwu.github.io</a></dd>
+          </div>
+          <div>
+            <dt data-i18n="factIdentityLabel">WeChat Channels</dt>
             <dd data-i18n="factIdentity">赛博吴同学</dd>
+          </div>
+          <div>
+            <dt data-i18n="factXhsLabel">Xiaohongshu</dt>
+            <dd data-i18n="factXhs">赛博吴同学</dd>
+          </div>
+          <div>
+            <dt data-i18n="factDouyinLabel">Douyin</dt>
+            <dd data-i18n="factDouyin">赛博吴同学</dd>
+          </div>
+          <div>
+            <dt data-i18n="factYoutubeLabel">YouTube</dt>
+            <dd><a href="https://www.youtube.com/@jaxxwu">@jaxxwu</a></dd>
           </div>
           <div>
             <dt data-i18n="factXLabel">X</dt>
             <dd><a href="https://x.com/jaxxwu">@jaxxwu</a></dd>
           </div>
           <div>
-            <dt data-i18n="factEmailLabel">邮箱</dt>
+            <dt data-i18n="factEmailLabel">Email</dt>
             <dd><a href="mailto:jaxxwu@qq.com">jaxxwu@qq.com</a></dd>
           </div>
         </dl>

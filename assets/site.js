@@ -15,8 +15,15 @@
       brand: "赛博吴同学",
       headline: "无限可能",
       lede: "探索极限之外",
+      factHomeCnLabel: "主页（国内）",
+      factHomeIntlLabel: "主页（国外）",
       factIdentityLabel: "视频号",
       factIdentity: "赛博吴同学",
+      factXhsLabel: "小红书",
+      factXhs: "赛博吴同学",
+      factDouyinLabel: "抖音",
+      factDouyin: "赛博吴同学",
+      factYoutubeLabel: "YouTube",
       factXLabel: "X",
       factEmailLabel: "邮箱",
       skip: "跳到主要内容",
@@ -33,8 +40,15 @@
       brand: "Jaxx Wu",
       headline: "Infinite Possibilities",
       lede: "Exploring beyond the limits",
+      factHomeCnLabel: "Homepage (China)",
+      factHomeIntlLabel: "Homepage (International)",
       factIdentityLabel: "WeChat Channels",
       factIdentity: "赛博吴同学",
+      factXhsLabel: "Xiaohongshu",
+      factXhs: "赛博吴同学",
+      factDouyinLabel: "Douyin",
+      factDouyin: "赛博吴同学",
+      factYoutubeLabel: "YouTube",
       factXLabel: "X",
       factEmailLabel: "Email",
       skip: "Skip to content",
@@ -43,8 +57,8 @@
     }
   };
 
-  var lang = "zh";
-  var theme = "light";
+  var lang = "en";
+  var theme = "dark";
   var langGroup = document.querySelector(".seg");
   var themeButton = document.getElementById("theme");
   function readStorage(key) {
@@ -113,9 +127,8 @@
 
   var savedTheme = readStorage(THEME_KEY);
   var savedLang = readStorage(LANG_KEY);
-  var systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  applyTheme(savedTheme === "dark" || savedTheme === "light" ? savedTheme : (systemDark ? "dark" : "light"));
-  applyLang(savedLang === "en" ? "en" : "zh");
+  applyTheme(savedTheme === "light" ? "light" : "dark");
+  applyLang(savedLang === "zh" ? "zh" : "en");
 
   langGroup.addEventListener("click", function (event) {
     var button = event.target.closest("[data-lang-set]");
@@ -140,13 +153,6 @@
     var next = theme === "dark" ? "light" : "dark";
     writeStorage(THEME_KEY, next);
     applyTheme(next);
-    if (document.documentElement.getAttribute("data-motion") === "reduce") redrawScene();
-  });
-
-  window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (event) {
-    var stored = readStorage(THEME_KEY);
-    if (stored === "dark" || stored === "light") return;
-    applyTheme(event.matches ? "dark" : "light");
     if (document.documentElement.getAttribute("data-motion") === "reduce") redrawScene();
   });
 
