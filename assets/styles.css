@@ -498,7 +498,11 @@ dd,
 
   h1 { font-size: clamp(2.55rem, 12vw, 3.6rem); }
   .lede { font-size: 1.05rem; }
-  .facts { margin-top: 1.7rem; }
+  .facts { margin-top: 1.7rem; grid-template-columns: 1fr; }
+  .facts div {
+    grid-template-columns: 1fr;
+    row-gap: 0.15rem;
+  }
 }
 
 @media (max-width: 380px) {
@@ -510,11 +514,6 @@ dd,
   .brand { letter-spacing: 0.04em; }
   .controls { gap: 6px; }
   .seg button { padding: 0 10px; }
-  .facts { grid-template-columns: 1fr; }
-  .facts div {
-    grid-template-columns: 1fr;
-    row-gap: 0.15rem;
-  }
 }
 
 @media (max-height: 720px) and (min-width: 760px) {
