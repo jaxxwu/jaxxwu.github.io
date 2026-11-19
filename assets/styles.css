@@ -40,6 +40,9 @@
   --scene-face: 28, 52, 64;
   --serif: "Noto Serif SC", "Songti SC", "STSong", "Source Han Serif SC", "Noto Serif CJK SC", serif;
   --sans: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei", sans-serif;
+  /* Degular and Inter are not files in this repo. These names keep var() from dropping the English stack. */
+  --font-alternate: Degular;
+  --font-sans: Inter;
 }
 
 [data-theme="light"] {
@@ -273,8 +276,13 @@ button, a { touch-action: manipulation; }
   background: #fff;
 }
 
+[data-lang="en"] body,
+[data-lang="en"] .brand,
+[data-lang="en"] h1 {
+  font-family: var(--font-alternate), Degular, var(--font-sans), Inter, "Helvetica Neue", Helvetica, Arial, sans-serif, "Noto Sans SC", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "WenQuanYi Micro Hei";
+}
+
 [data-lang="en"] .brand {
-  font-family: var(--sans);
   font-weight: 500;
   font-size: 1.05rem;
   letter-spacing: 0.01em;
